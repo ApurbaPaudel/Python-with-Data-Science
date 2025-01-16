@@ -51,12 +51,13 @@ for i in range(1,10):
 
 #game using while loop 
 #secret game
-secret=7
+import random
+secret=random.randint(1,10)
 guess=''
 limit=5
 i=0
 while i<limit:
-    guess=int(input('enter your guess number'))
+    guess=int(input('enter your guess number: '))
     if guess==secret:
         print('you won')
         print('Do you want to play again?')
@@ -67,6 +68,9 @@ while i<limit:
             break
     i+=1
 else:
-    print('Your limit is over')
+    print(f'Your limit is over,the secret number was {secret}')
+
+
+
 
 
