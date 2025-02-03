@@ -1,2 +1,2 @@
-# Python-with-Data-Science
+# Python
 Learning
